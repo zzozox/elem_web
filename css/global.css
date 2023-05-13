@@ -1,0 +1,54 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Microsoft Sans Serif";
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*icon*/
+/**
+ * location 定位小图标
+ * 说明：使用div标签，加上icon-location类样式即可。
+ * 但需要放置在一个容器中，调整容器大小，图标能自适应容器大小。
+ * 示例：
+ * <div class="icon-location-box">
+ * <div class="icon-location"></div>
+ * </div>
+ */
+.icon-location {
+    position: relative;
+    width: 100%; /*先画一个正方形*/
+    height: 100%;
+    border-radius: 50% 50% 50% 0; /*然后将三个角变成圆角*/
+    background: #fff;
+    transform: rotate(-45deg); /*最后，旋转45度*/
+}
+.icon-location:after {
+    content: '';
+    width: 40%;
+    height: 40%;
+    margin: 30% 0 0 29%;
+    background-color: #0097FF;
+    position: absolute;
+    border-radius: 50%;
+}
+/*reset*/
+/***************** CSS重置 *******************/
+html,body,div,span,h1,h2,h3,h4,h5,h6,ul,ol,li,p{
+    margin: 0;
+    padding: 0;
+}
+html,body{ width: 100%;
+    height: 100%;
+    font-family: "微软雅黑";
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
